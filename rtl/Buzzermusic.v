@@ -12,7 +12,7 @@ assign en = music_start;
 
 wire [7:0] addr_start;
 wire [7:0] addr_finish;
-addr_decoder addr_decoder(
+addr_mux addr_mux(
     .select(music_select)
     ,.addr_start(addr_start)
     ,.addr_finish(addr_finish)
@@ -59,8 +59,6 @@ bzmusic_ctrl bzmusic_ctrl(
     ,.tune_or_beat      (tune_or_beat)
     ,.music_finish      (music_finish)
     ,.beat_finish       (beat_finish)
-    ,.addr_select_en    (addr_select_en)
-    ,.addr_select_rstn  (addr_select_rstn)
     ,.addr_en           (addr_en)
     ,.addr_rstn         (addr_rstn)
     ,.tune_en           (tune_en)

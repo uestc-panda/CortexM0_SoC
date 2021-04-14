@@ -5,8 +5,6 @@ module bzmusic_ctrl(
     input   tune_or_beat,
     input   music_finish,
     input   beat_finish,
-    output  reg addr_select_en,
-    output  reg addr_select_rstn,
     output  reg addr_en,
     output  reg addr_rstn,
     output  reg tune_en,
