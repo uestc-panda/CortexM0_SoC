@@ -1,1 +1,4 @@
-# CortexM0_SoC
+# 基于CortexM0的播放器设计
+
+在Xilinx Artix-75t开发板上实现，使用蜂鸣器播放音乐，通过按键中断控制音乐播放。
+
