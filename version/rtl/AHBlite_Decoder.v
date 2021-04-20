@@ -12,7 +12,7 @@ module AHBlite_Decoder
     parameter Port2_en = 1,
     /************************/
 
-    /*Segdisp enable parameter*/
+    /*Buzzermusic enable parameter*/
     parameter Port3_en = 1
     /************************/
 )(
@@ -27,7 +27,7 @@ module AHBlite_Decoder
     /*RAMDATA OUTPUT SELECTION SIGNAL*/
     output wire P2_HSEL,
 
-    /*UART OUTPUT SELECTION SIGNAL*/
+    /*Buzzermusic OUTPUT SELECTION SIGNAL*/
     output wire P3_HSEL       
 );
 
