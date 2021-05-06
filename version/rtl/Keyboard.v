@@ -28,7 +28,8 @@ keyboard_filter keyboard_filter(
 assign key_interrupt = |key_pulse ;
 
 keyboard_reg keyboard_reg(
-     .rstn(rstn)
+     .clk(clk)
+    ,.rstn(rstn)
     ,.key_clear(key_clear)
     ,.key_pulse(key_pulse)
     ,.key_reg(key_data)
